@@ -1,0 +1,1 @@
+export const SUPPORT_PHONE = '012-4730072'

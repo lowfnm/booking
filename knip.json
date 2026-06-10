@@ -1,0 +1,25 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": [
+    "app/**/{page,layout,loading,error,not-found,route,default,opengraph-image,icon,apple-icon,sitemap,manifest}.{js,ts,tsx}",
+    "app/api/**/route.{js,ts}",
+    "app/**/*.test.ts",
+    ".storybook/**/*.{js,ts}",
+    "docs/.vitepress/config.mts",
+    "vitest.config.mts"
+  ],
+  "project": ["app/**/*.{js,ts,tsx}", ".storybook/**/*.{js,ts}", "docs/.vitepress/**/*.{js,ts}"],
+  "ignore": [
+    "app/components/booking-form/thanks.tsx",
+    "app/components/calendar.tsx",
+    "app/components/day-info.tsx",
+    "app/components/stepper/**",
+    "app/components/ui/circle.tsx",
+    "app/types/date.ts"
+  ],
+  "ignoreDependencies": ["@storybook/nextjs", "vitepress", "chromatic"],
+  "ignoreExportsUsedInFile": true,
+  "ignoreIssues": {
+    "app/components/booking-form/index.tsx": ["exports", "types"]
+  }
+}

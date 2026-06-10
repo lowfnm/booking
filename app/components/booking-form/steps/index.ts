@@ -1,0 +1,7 @@
+export { default as BranchStep } from '@/components/booking-form/steps/branch-step'
+export { default as CheckoutStep } from '@/components/booking-form/steps/checkout-step'
+export { default as ClientTypeStep } from '@/components/booking-form/steps/client-type-step'
+export { default as ContactDetailsStep } from '@/components/booking-form/steps/contact-details-step'
+export { default as DateAndTimeStep } from '@/components/booking-form/steps/date-and-time-step'
+export { default as PaymentStep } from '@/components/booking-form/steps/payment-step'
+export { default as ServiceStep } from '@/components/booking-form/steps/service-step'

@@ -1,0 +1,17 @@
+import type { Meta, StoryObj } from '@storybook/react'
+
+import Header from '@/components/layout/header'
+
+const meta: Meta<typeof Header> = {
+  title: 'Noir Crown/Layout/Header',
+  component: Header,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'fullscreen',
+  },
+}
+
+export default meta
+type Story = StoryObj<typeof Header>
+
+export const Default: Story = {}

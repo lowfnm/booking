@@ -1,0 +1,37 @@
+{
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2024"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "jsx": "preserve",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "target": "ES2024",
+    "strict": true,
+    "allowJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./app/*"]
+    },
+    "noEmit": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "app/components/booking-form/thanks.tsx",
+    "app/components/calendar.tsx",
+    "app/components/day-info.tsx",
+    "app/components/stepper",
+    "app/components/ui/circle.tsx",
+    "app/types/date.ts"
+  ]
+}

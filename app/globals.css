@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 7%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 38 38% 44%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 18%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 38 38% 44%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 24%;
+  --input: 0 0% 24%;
+  --ring: 38 38% 44%;
+  --radius: 0.6rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply min-h-full bg-background;
+  }
+
+  body {
+    @apply font-sans text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .barber-panel {
+    @apply rounded-xl border border-border bg-card/90 shadow-xl shadow-black/30 backdrop-blur-sm;
+  }
+
+  .barber-chip {
+    @apply inline-flex items-center rounded-full border border-border bg-secondary px-3 py-1 text-xs uppercase tracking-[0.12em] text-muted-foreground;
+  }
+}
