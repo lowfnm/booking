@@ -40,6 +40,35 @@
   body {
     @apply font-sans text-foreground antialiased;
   }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary) / 0.55) hsl(var(--secondary));
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+    border-radius: 999px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.55);
+    border: 1px solid hsl(var(--secondary));
+    border-radius: 999px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+
+  *::-webkit-scrollbar-corner {
+    background: hsl(var(--secondary));
+  }
 }
 
 @layer components {
